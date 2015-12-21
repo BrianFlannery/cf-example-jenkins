@@ -1,0 +1,10 @@
+
+  503  cf login -u flannebp -a https://api.devops.geointservices.io 
+  504  cf push jenkins.war -b https://github.com/Altoros/jenkins-buildpack -m 2G jenkins
+  505  cf push -p jenkins.war -b https://github.com/Altoros/jenkins-buildpack -m 2G jenkins
+  506  pwd
+  514  bash build-for-using-tomcat.sh ; cf push -p jenkins.war -b https://github.com/Altoros/jenkins-buildpack -m 2G jenkins
+  515  cf delete jenkins
+  516  cf push -p jenkins.war -b https://github.com/Altoros/jenkins-buildpack -m 2G jenkins
+  517  cf create-domain dev dev1.geointservices.io
+  518  cf push -p jenkins.war -b https://github.com/Altoros/jenkins-buildpack -m 2G jenkins

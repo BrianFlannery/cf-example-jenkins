@@ -1,5 +1,7 @@
 applications:
   - name: jenkins
     path: jenkins.war
-    buildpack: https://github.com/Altoros/jenkins-buildpack
+    # buildpack: https://github.com/Altoros/jenkins-buildpack
     memory: 3G
+    domain: dev.geointservices.io
+    host: cfjenkins
